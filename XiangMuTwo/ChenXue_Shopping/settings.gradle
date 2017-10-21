@@ -1,0 +1,1 @@
+include ':app', ':zxing', ':mylibrary', 'SwipeRefreshlibrary', ':recycleviewset', ':zxinglite', ':xrecycleview', ':time'

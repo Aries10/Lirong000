@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">杂货铺</string>
+    <string name="weitao">微淘</string>
+    <string name="kind">分类</string>
+    <string name="addressBoook">通讯录</string>
+    <string name="cart">购物车</string>
+    <string name="compile">编辑</string>
+    <string name="searchFrom">宝贝</string>
+    <string name="search">搜索</string>
+    <string name="history">历史记录</string>
+    <string name="clear">清空历史记录</string>
+    <string name="hotGoods">热门专题</string>
+    <string name="youLike">猜你喜欢</string>
+    <string name="activityHot">热门活动</string>
+    <string name="set">设置</string>
+    <string name="unlogin">未登录</string>
+    <string name="particulars">详情</string>
+    <string name="addcart">添加购物车</string>
+    <string name="buynow">立即购买</string>
+    <string name="loging">登录</string>
+    <string name="reg">新用户注册</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+</resources>

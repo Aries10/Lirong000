@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.0.0'
+    }
+}
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.bwie.shopping.greendao'
+    targetGenDir 'src/main/java'
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.bwie.shopping"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {//D:/androidStudio/keystore.jks
+            storeFile file("D:/androidStudio/keystore.jks")//keystore的路径
+            storePassword "123456"
+            keyAlias "bw"
+            keyPassword "123456"
+        }
+        debug {
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+dependencies {
+    compile files('libs/gson-2.2.4.jar')
+    compile project(':recycleviewset')
+    compile project(':zxinglite')
+    compile project(':xrecycleview')
+    compile files('libs/AMap_Location_V3.5.0_20170731.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.1'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okio:okio:1.7.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/alipaySdk-20160516.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile project(':time')
+    compile'org.greenrobot:greendao:3.0.1'
+    compile'org.greenrobot:greendao-generator:3.0.0'
+}

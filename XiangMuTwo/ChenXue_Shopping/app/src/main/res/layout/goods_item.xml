@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<CheckBox
+    android:id="@+id/goods_checked"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="center_vertical"
+    android:focusable="true"
+    android:clickable="true"/>
+    <ImageView
+        android:id="@+id/goodscart_pic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="6">
+        <TextView
+            android:id="@+id/goodscart_name"
+            android:textSize="21sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/goodscart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrice"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/cart_jian"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/jian"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/goodscart_count"
+            android:text="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/cart_jian"
+            android:layout_marginBottom="7dp"
+            />
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/cart_jia"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/jia"
+            android:layout_toLeftOf="@id/goodscart_count"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

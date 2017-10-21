@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_color"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/set"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/location"
+            android:clickable="true"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/location" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_color">
+        <ImageView
+            android:id="@+id/login_tou"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:src="@mipmap/uik_avatar_normal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/login_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unlogin"
+            android:layout_toRightOf="@id/login_tou"
+            android:layout_centerVertical="true"
+            android:textSize="23sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/mylocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_state"
+            android:layout_toRightOf="@id/login_tou"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorWhite3"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/myaddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:text="我的收货地址"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+    <ImageView
+        android:id="@+id/mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/mainpage"/>
+</LinearLayout>

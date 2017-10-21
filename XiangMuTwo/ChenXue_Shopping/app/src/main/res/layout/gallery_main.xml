@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activityHot"
+        android:textSize="23sp"/>
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/countdownView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:isHideTimeBackground="false"
+        app:timeBgColor="#f5f5f5"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:timeTextColor="#000"
+        app:timeTextSize="14sp"
+        app:suffixGravity="center"
+        app:suffixTextColor="#7B3A94"
+        app:suffixTextSize="12sp"
+        app:suffixDay="天"
+        app:suffixHour="时"
+        app:suffixMinute="分"
+        app:suffixSecond="秒"
+        android:layout_centerInParent="true"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+         >
+    </ImageView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="257dip" >
+
+        <com.bwie.shopping.view.MyGallery2
+            android:id="@+id/banner_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:fadingEdgeLength="0.0dp"
+            android:keepScreenOn="true"
+            android:soundEffectsEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottomNavPoint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_focus_indicator_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

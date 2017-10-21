@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_color">
+
+        <ImageView
+            android:id="@+id/reg_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/btn_back_detail_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/reg"
+            android:textColor="@color/colorWhite3"
+            android:textSize="23sp" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/reg_uname"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"/>
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint="请输入密码"
+        />
+    <EditText
+        android:id="@+id/reg_ispassword"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint="确认输入密码"
+        />
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="请填写邮箱"/>
+    <Button
+        android:id="@+id/reg_but"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/but_shape"
+        android:layout_margin="20dp"
+        android:text="注册"
+        android:textSize="22sp"
+        android:textColor="@color/colorWhite3"/>
+</LinearLayout>

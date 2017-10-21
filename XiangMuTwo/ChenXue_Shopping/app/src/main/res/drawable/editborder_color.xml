@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    //输入框的底部边框
+    <solid android:color="#ffff"/>
+    <size android:width="2000dp"
+        android:height="2dp"/>
+</shape>
