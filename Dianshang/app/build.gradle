@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.bawei.xiangmutwo"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {//C:\Users\vcc\keystore.jks
+            storeFile file("D://key.jks")//keystore的路径
+            storePassword "123456"
+            keyAlias "lir"
+            keyPassword "123456"
+        }
+        debug {
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //picasso图片加载依赖
+    //recyclerview依赖
+    compile project(':okhttplibrary')
+    compile project(':searchview_library')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.0.4'
+    testCompile 'junit:junit:4.12'
+    compile 'cn.yipianfengye.android:zxing-library:2.1'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/alipaySdk-20170725.jar')
+}

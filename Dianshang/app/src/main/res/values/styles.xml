@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+
+        <item name="colorPrimary">#FF5001</item>
+        <item name="colorControlNormal">#FF5001</item>
+        <item name="colorPrimaryDark">#DD3000</item>
+        <item name="colorControlHighlight">#FF5001</item>
+        <item name="colorControlActivated">#DD3000</item>
+        <!--<item name="android:windowAnimationStyle">@style/Animation.Main</item>-->
+    </style>
+
+</resources>

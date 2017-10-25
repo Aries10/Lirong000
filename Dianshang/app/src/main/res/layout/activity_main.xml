@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.xiangmutwo.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_linear"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@drawable/index_textcolor_pressed"
+            android:drawableTop="@drawable/index_drawable_pressed"
+            android:text="首页"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@drawable/index_textcolor_pressed"
+            android:drawableTop="@drawable/type_drawable_pressed"
+            android:text="分类"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@drawable/index_textcolor_pressed"
+            android:drawableTop="@drawable/shop_drawable_pressed"
+            android:text="购物车"/>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:textColor="@drawable/index_textcolor_pressed"
+            android:drawableTop="@drawable/mine_drawable_pressed"
+            android:text="我的"/>
+
+    </RadioGroup>
+
+</LinearLayout>
