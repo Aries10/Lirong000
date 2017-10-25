@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string name="rijian">日间模式</string>
+    <string name="yejian">夜间模式</string>
+</resources>
